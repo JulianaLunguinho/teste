@@ -9,7 +9,7 @@ public class Tarefa {
 
     @Id
     @Column
-    private Long id;
+    private Integer id;
 
     @Column
     private String titulo;
@@ -20,7 +20,7 @@ public class Tarefa {
     @Column
     private boolean concluida;
 
-    public Long getId() {
+    public Integer getId() {
         return id;
     }
 
