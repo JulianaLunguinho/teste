@@ -1,10 +1,10 @@
-package com.gama.bank;
+package com.toDoList;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class BankApplicationTests {
+class ToDoListApplicationTests {
 
 	@Test
 	void contextLoads() {
