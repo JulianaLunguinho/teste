@@ -25,5 +25,4 @@ public class TarefaController {
         service.salvarTarefa(tarefa);
         return ResponseEntity.ok(tarefa);
     }
-
 }
