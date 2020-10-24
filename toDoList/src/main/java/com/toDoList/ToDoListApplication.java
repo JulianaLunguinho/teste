@@ -12,15 +12,11 @@ public class ToDoListApplication {
 }
 
 /*
-Exercício Todo list...
+lista de tarefas:
 
-> Cadastrar uma tarefa                          ok
-> Listar uma tarefa                             ok
-> Listar todas as tarefas                       ok
-> Listar todas as tarefas concluidas
-> Listar todas as tarefas nao concluidas
-> Remover uma tarefa
-> Atualizar uma tarefa
-
-> Criar um novo endpoint para que quando receber o request '/{id}/description' listar apenas a descrição do TODO
+> TODO: Listar todas as tarefas concluidas
+> TODO: Listar todas as tarefas nao concluidas
+> TODO: Remover uma tarefa
+> TODO: Atualizar uma tarefa
+> TODO: Criar um novo endpoint para que quando receber o request '/{id}/description' listar apenas a descrição.
 */
