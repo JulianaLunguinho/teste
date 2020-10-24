@@ -20,6 +20,11 @@ public class TarefaController {
         return service.listarTarefas();
     }
 
+    @GetMapping("/{id}")
+    private Tarefa getTarefasID(@PathVariable("id") Integer id){
+        return service.getTarefaById(id);
+    }
+
     @PostMapping
     public ResponseEntity<Tarefa> salvarTarefa(@RequestBody Tarefa tarefa) {
         service.salvarTarefa(tarefa);

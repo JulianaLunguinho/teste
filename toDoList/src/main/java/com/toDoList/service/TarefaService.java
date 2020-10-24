@@ -13,8 +13,8 @@ public class TarefaService {
     @Autowired
     private TarefaRepository repository;
 
-    public Tarefa salvarTarefa(Tarefa tarefa) {
-        return repository.save(tarefa);
+    public void salvarTarefa(Tarefa tarefa) {
+        repository.save(tarefa);
     }
 
     public List<Tarefa> listarTarefas() {
@@ -24,5 +24,4 @@ public class TarefaService {
     public Tarefa getTarefaById(Integer id) {
         return repository.findById(id).orElseThrow();
     }
-
 }
