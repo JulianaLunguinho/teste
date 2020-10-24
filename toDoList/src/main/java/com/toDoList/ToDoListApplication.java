@@ -7,11 +7,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class ToDoListApplication {
 
 	public static void main(String[] args) {
-
 		SpringApplication.run(ToDoListApplication.class, args);
 	}
+	// teste
 
-
-
-	//lalalala
+	// juju commitou aqui
 }
