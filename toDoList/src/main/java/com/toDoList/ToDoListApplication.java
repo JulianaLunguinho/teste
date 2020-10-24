@@ -6,10 +6,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class ToDoListApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(ToDoListApplication.class, args);
-	}
-	// teste
-
-	// juju commitou aqui
+    public static void main(String[] args) {
+        SpringApplication.run(ToDoListApplication.class, args);
+    }
+    /*
+    teste
+    juju commitou aqui
+    --coloque o prox aqui
+    */
 }
