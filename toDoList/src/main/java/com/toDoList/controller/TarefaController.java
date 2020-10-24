@@ -1,10 +1,29 @@
 package com.toDoList.controller;
 
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import com.toDoList.entity.Tarefa;
+import com.toDoList.service.TarefaService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
-@RequestMapping
+@RequestMapping("/listaDeTarefas")
 public class TarefaController {
+
+    @Autowired
+    private TarefaService service;
+
+    @GetMapping
+    public List<Tarefa> getTodasTarefas() {
+        return service.listarTarefas();
+    }
+
+    @PostMapping
+    public ResponseEntity<Tarefa> salvarTarefa(@RequestBody Tarefa tarefa) {
+        service.salvarTarefa(tarefa);
+        return ResponseEntity.ok(tarefa);
+    }
 
 }

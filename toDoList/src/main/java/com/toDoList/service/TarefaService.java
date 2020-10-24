@@ -5,7 +5,6 @@ import com.toDoList.repository.TarefaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import java.util.Collections;
 import java.util.List;
 
 @Component
@@ -25,4 +24,5 @@ public class TarefaService {
     public Tarefa getTarefaById(Integer id) {
         return repository.findById(id).orElseThrow();
     }
+
 }

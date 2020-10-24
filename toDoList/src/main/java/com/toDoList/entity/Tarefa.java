@@ -2,22 +2,24 @@ package com.toDoList.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Entity
 public class Tarefa {
 
     @Id
-    @Column
+    @GeneratedValue
+    @Column(name = "id")
     private Integer id;
 
-    @Column
+    @Column(name = "titulo")
     private String titulo;
 
-    @Column
+    @Column(name = "descricao")
     private String descricao;
 
-    @Column
+    @Column(name = "concluida")
     private boolean concluida;
 
     public Integer getId() {
