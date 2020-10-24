@@ -14,13 +14,13 @@ public class ToDoListApplication {
 /*
 Exercício Todo list...
 
-> Cadastrar uma tarefa
-> Listar uma tarefa
-> Listar todas as tarefas
+> Cadastrar uma tarefa                          ok
+> Listar uma tarefa                             ok
+> Listar todas as tarefas                       ok
 > Listar todas as tarefas concluidas
 > Listar todas as tarefas nao concluidas
 > Remover uma tarefa
 > Atualizar uma tarefa
 
 > Criar um novo endpoint para que quando receber o request '/{id}/description' listar apenas a descrição do TODO
-                                                                                                             */
+*/
