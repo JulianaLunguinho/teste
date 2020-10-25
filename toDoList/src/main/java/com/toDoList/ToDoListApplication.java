@@ -14,8 +14,6 @@ public class ToDoListApplication {
 /*
 lista de tarefas:
 
-> TODO: Listar todas as tarefas concluidas
-> TODO: Listar todas as tarefas nao concluidas
 > TODO: Remover uma tarefa
 > TODO: Atualizar uma tarefa
 > TODO: Criar um novo endpoint para que quando receber o request '/{id}/description' listar apenas a descrição.
