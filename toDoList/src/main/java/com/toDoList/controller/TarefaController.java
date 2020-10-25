@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/listaDeTarefas")
+@RequestMapping("/lista")
 public class TarefaController {
 
     @Autowired
@@ -21,8 +21,13 @@ public class TarefaController {
     }
 
     @GetMapping("/{id}")
-    private Tarefa getTarefasID(@PathVariable("id") Integer id){
+    public Tarefa getTarefasID(@PathVariable("id") Integer id){
         return service.getTarefaById(id);
+    }
+
+    @GetMapping("/ativas")
+    public List<Tarefa> getTarefasNaoConcluidas(){
+        return service.listarNaoConcluidas();
     }
 
     @PostMapping

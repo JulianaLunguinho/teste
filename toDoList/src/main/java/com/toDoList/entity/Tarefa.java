@@ -19,8 +19,8 @@ public class Tarefa {
     @Column(name = "descricao")
     private String descricao;
 
-    @Column(name = "concluida")
-    private boolean concluida;
+    @Column(name = "active")
+    private boolean active;
 
     public Integer getId() {
         return id;
@@ -42,11 +42,11 @@ public class Tarefa {
         this.descricao = descricao;
     }
 
-    public boolean isConcluida() {
-        return concluida;
+    public boolean isActive() {
+        return active;
     }
 
-    public void setConcluida(boolean concluida) {
-        this.concluida = concluida;
+    public void setActive(boolean active) {
+        this.active = active;
     }
 }
