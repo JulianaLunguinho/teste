@@ -30,6 +30,11 @@ public class TarefaController {
         return service.listarNaoConcluidas();
     }
 
+    @GetMapping("/inativas")
+    public List<Tarefa> getTarefasConcluidas(){
+        return service.listarConcluidas();
+    }
+
     @PostMapping
     public ResponseEntity<Tarefa> salvarTarefa(@RequestBody Tarefa tarefa) {
         service.salvarTarefa(tarefa);

@@ -28,4 +28,8 @@ public class TarefaService {
     public List<Tarefa> listarNaoConcluidas(){
         return repository.findByActiveTrue();
     }
+
+    public List<Tarefa> listarConcluidas(){
+        return repository.findByActiveFalse();
+    }
 }
