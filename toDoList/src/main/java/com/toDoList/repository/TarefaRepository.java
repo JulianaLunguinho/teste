@@ -7,6 +7,5 @@ import java.util.List;
 
 public interface TarefaRepository extends CrudRepository<Tarefa, Integer> {
 
-    List<Tarefa> findByActiveTrue();
-    List<Tarefa> findByActiveFalse();
+    List<Tarefa> findByActive(boolean status);
 }

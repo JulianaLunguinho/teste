@@ -25,14 +25,9 @@ public class TarefaController {
         return service.getTarefaById(id);
     }
 
-    @GetMapping("/ativas")
-    public List<Tarefa> getTarefasNaoConcluidas(){
-        return service.listarNaoConcluidas();
-    }
-
-    @GetMapping("/inativas")
-    public List<Tarefa> getTarefasConcluidas(){
-        return service.listarConcluidas();
+    @GetMapping("/status")
+    public List<Tarefa> getTarefasByStatus(@RequestParam boolean status ){
+        return service.listarPorStatus(status);
     }
 
     @PostMapping

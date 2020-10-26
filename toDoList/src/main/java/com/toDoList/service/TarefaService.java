@@ -25,12 +25,8 @@ public class TarefaService {
         return repository.findById(id).orElseThrow();
     }
 
-    public List<Tarefa> listarNaoConcluidas(){
-        return repository.findByActiveTrue();
-    }
-
-    public List<Tarefa> listarConcluidas(){
-        return repository.findByActiveFalse();
+    public List<Tarefa> listarPorStatus(boolean status){
+        return repository.findByActive(status);
     }
 
     public void removeTarefaById(Integer id){
