@@ -40,4 +40,10 @@ public class TarefaController {
         service.salvarTarefa(tarefa);
         return ResponseEntity.ok(tarefa);
     }
+
+    @PostMapping("/{id}/delete")
+    public ResponseEntity<String> deleteTarefaById(@PathVariable("id") Integer id){
+        service.removeTarefaById(id);
+        return ResponseEntity.ok("A tarefa foi deletada com sucesso!");
+    }
 }

@@ -32,4 +32,8 @@ public class TarefaService {
     public List<Tarefa> listarConcluidas(){
         return repository.findByActiveFalse();
     }
+
+    public void removeTarefaById(Integer id){
+        repository.deleteById(id);
+    }
 }
